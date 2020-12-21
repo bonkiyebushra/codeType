@@ -1,0 +1,112 @@
+
+<html>
+<header>
+
+    <style>
+
+        html {
+            text-align: center;
+            background-color: whitesmoke;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        p {
+            font-size: 140%;
+        }
+        
+        .main_area {
+            margin: 10 60 10 60;
+        }
+
+        textarea {
+            resize: none;
+            width: 100%;
+            height: 60%;
+            font-size: 4em;
+            background-color: white;
+        }
+
+        .top_bar {
+            width: 100%;
+            height: 8%;
+            background-color: #16bf7e;
+            position: relative;
+            
+        }
+
+        button {
+            font-size: 110%;
+            background-color: 16bf7e;
+        }
+
+        #sign_up_button {
+            position: absolute;
+            right: 5%;
+            top: 40%;
+            background-color: rgb(186, 224, 224);
+        }
+
+        #login_button {
+            position: absolute;
+            right: 1%;
+            top:40%;
+            background-color: rgb(186, 224, 224);
+        }
+
+.typing_stats {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+    </style>
+
+    <script>
+
+
+        window.addEventListener("keypress",checkKeyPress,false);
+
+        function checkKeyPress(event) {
+            let text = document.getElementsByClassName("code_text").text;
+            alert(text);
+        }
+      
+
+    </script>
+
+
+    <title>codetype</title>
+</header>
+<body>
+
+    <div class = "top_bar">
+        
+        <button id="sign_up_button">Sign Up</button>
+        <button id="login_button">Login</button>
+
+    </div>
+
+    <h1>Welcome to codeType</h1>
+
+    <button >Java</button>
+    <button >HTML</button>
+    <button >Javascript</button>
+    <button >Web Trio</button>
+    <button >Customize</button>
+
+    <div class="main_area">
+
+        <textarea id="code_text" resize="none" disabled>Hello welcome to codeType. In this box will be all the words you'll need to type.Below here it will show your typing speed.</textarea>
+
+    </div>
+
+    <span class="typing_stats">
+        <p class="accuracy_percentage">Accuracy:  %</p>
+        <p class="type_speed">Speed:  wpm </p>
+    </span>
+
+</body>
+</html>
